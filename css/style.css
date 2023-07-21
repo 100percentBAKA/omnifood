@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+}
+
+.section-hero {
+    background-color: #fdf2e9;
+}
+
+.hero {
+    /* GRID CONTAINER */
+    display: grid;
+
+    max-width: 130rem;
+    margin: auto; /* Centering the container */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-text-box {
+
+}
+
+.primary-heading {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+.hero-image-box {
+
+}
+
+.hero-image {
+    width: 100% ;
+}
