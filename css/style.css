@@ -9,15 +9,76 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     line-height: 1;
     color: #555;
 }
 
+
+/* HEADER SECTION */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf2e9;
+
+    /* The header is to be made sticky, set height to a value */
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.logo {
+    height: 2.4rem;
+}
+
+/* NAVIGATION SECTION */
+.main-navigation-list {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.main-navigation-link:link, 
+.main-navigation-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 2.0rem;
+
+    transition: all 0.3s;
+}
+
+.main-navigation-link:hover, 
+.main-navigation-link:active {
+    color: #cf711f;
+}
+
+.link-call-to-action:link, 
+.link-call-to-action:visited {
+    padding: 1.2rem 2.4rem;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: #e67e22;
+    color: #fff;
+
+    transition: all 0.3s;
+}
+
+.link-call-to-action:hover, 
+.link-call-to-action:active {
+    background-color: #cf711f;
+}
+
+
+
+
+/* HERO SECTION  */
 .section-hero {
     background-color: #fdf2e9;
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
@@ -25,14 +86,11 @@ body {
     display: grid;
 
     max-width: 130rem;
+    padding: 0 3.6rem;
     margin: auto; /* Centering the container */
     grid-template-columns: 1fr 1fr;
     gap: 9.6rem;
     align-items: center;
-}
-
-.hero-text-box {
-
 }
 
 .primary-heading {
@@ -50,10 +108,6 @@ body {
     margin-bottom: 4.8rem;
 }
 
-.hero-image-box {
-
-}
-
 .hero-image {
     width: 100% ;
 }
@@ -61,6 +115,7 @@ body {
 .button:link, 
 .button:visited {
     font-size: 2rem;
+    font-weight: 600;
     display: inline-block;
     padding: 1.6rem 3.2rem;
     text-decoration: none;
@@ -99,4 +154,74 @@ body {
     margin-right: 1.6rem !important;
 }
 
+.delivered-meals {
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.delivered-images img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border: 3px solid #fdf2e9;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+}
+
+.delivered-description {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.span-orange {
+    color: #cf711f;
+}
+
+/* HOW IT WORKS SECTION  */
+
+.section-how {
+    padding: 9.6rem 0;
+    background-color: orangered;
+}
+
+.section-how div {
+    padding: 100px;
+    font-size: 50px;
+}
+
+.section-how div:nth-child(1) {
+    background-color: aqua;
+}
+
+.section-how div:nth-child(2) {
+    background-color: blue;
+}
+
+.section-how div:nth-child(3) {
+    background-color: yellow;
+}
+
+.section-how div:nth-child(4) {
+    background-color: greenyellow;
+}
+
+.container {
+    max-width: 120rem; /* 114rem */
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 3.6rem;
+}
+
+.grid--2--columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--columns {
+    grid-template-columns: repeat(4, 1fr);
+}
 
