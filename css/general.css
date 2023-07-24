@@ -64,3 +64,15 @@ body {
 .margin-top-48 {
     margin-top: 4.8rem !important;
 }
+
+.margin-bottom-18 {
+    margin-bottom: 1.8rem;
+}
+
+.margin-bottom-36 {
+    margin-bottom: 3.6rem;
+}
+
+.set-display-grid {
+    display: grid;
+}
