@@ -1,0 +1,112 @@
+/*
+    rem and em do not depend on html font-size in media queries!
+    Instead, 1rem = 1em = 16px
+    rem --> root font size
+    em --> current font size
+*/
+
+@media (max-width: 85em) {
+    .hero {
+        max-width: 120em;
+    }
+
+    .primary-heading {
+        font-size: 4.4rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 76em) {
+    html {
+        font-size: 56.25%;
+    }
+    
+    .secondary-heading {
+        font-size: 3.6rem;
+    }
+
+    .tertiary-heading {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .hero {
+        gap: 6.4rem;
+    }
+
+    .testimonial-container {
+        padding: 9.6rem 3.2rem;
+    }
+}
+
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .hero-image {
+        width: 60%;
+    }
+
+    .hero-text-box, 
+    .hero-image-box {
+        text-align: center;
+    }
+
+    .delivered-meals {
+        justify-content: center;
+    }
+
+    .as-mentioned-logos img {
+        height: 2.4rem;
+    }
+
+    .step-number {
+        font-size: 7.0rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .list-item {
+        line-height: 1.6;
+    }
+
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .button-form {
+        margin-top: 2.4rem;
+    }
+}

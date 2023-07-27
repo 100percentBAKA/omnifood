@@ -628,6 +628,7 @@
     color: #fdf2e9;
     align-self: flex-end;
     padding: 1.2rem;
+    margin: 1.2rem;
 }
 
 .button-form:hover, 
