@@ -5,6 +5,8 @@
     em --> current font size
 */
 
+/* Media queries for laptop screens */
+
 @media (max-width: 85em) {
     .hero {
         max-width: 120em;
@@ -18,6 +20,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Media queries for smaller laptops + tablet screens */
 
 @media (max-width: 76em) {
     html {
@@ -49,6 +53,8 @@
         padding: 9.6rem 3.2rem;
     }
 }
+
+/* Media queries for Tablet screens */
 
 @media (max-width: 59em) {
     html {
@@ -109,4 +115,66 @@
     .button-form {
         margin-top: 2.4rem;
     }
+
+    .button-menu-nav {
+        display: block;
+    }
+
+    .main-navigation {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 0.5s;
+
+        /*
+            display: none allows no transition at all
+        */
+
+        /* display: none; */
+
+        /* opacity 0 hides the element and allows transition */
+        /* 1) HIDE THE ELEMENT */
+        opacity: 0;
+        /* 2) HIDE THE ELEMENT FROM SCREEN READERS */
+        visibility: hidden;
+        /* 3) MAKE THE ELEMENT INACCESSIBLE TO MOUSE AND KEYBOARD */
+        pointer-events: none;
+    }
+    
+    .nav-open, 
+    .main-navigation {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .nav-open, 
+    .icon-menu-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open, 
+    .icon-menu-nav[name="menu-outline"] {
+        display:none;
+    }
+
+
+    .main-navigation-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-navigation-link:link, 
+    .main-navigation-link:visited {
+        font-size: 3rem;
+    }
+
 }
