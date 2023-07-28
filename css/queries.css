@@ -133,6 +133,7 @@
         justify-content: center;
 
         transition: all 0.5s;
+        transform: translateX(100%);
 
         /*
             display: none allows no transition at all
