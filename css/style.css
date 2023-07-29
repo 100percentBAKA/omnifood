@@ -63,7 +63,7 @@
     cursor: pointer;
 
     display: none;
-    /* ONCE THE MEDIA QUERY IS REACHED, DISPLAY THE BUTTONS */
+    /* once the media query is reached display the buttons */
 }
 
 .icon-menu-nav {
@@ -602,7 +602,7 @@
 }
 
 .cta-image-box img{
-    width: 103%;
+    width: 100%;
 }
 
 .cta-heading {
