@@ -118,6 +118,7 @@
 
     .button-menu-nav {
         display: block;
+        z-index: 999;
     }
 
     .main-navigation {
