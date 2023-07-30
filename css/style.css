@@ -10,7 +10,7 @@
     padding: 0 4.8rem;
 }
 
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -21,7 +21,7 @@
     background-color: #fff;
     z-index: 999;
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  }
+  } */
 
 .logo {
     height: 2.4rem;
